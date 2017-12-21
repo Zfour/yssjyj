@@ -52,8 +52,6 @@
   <link rel="stylesheet" href="/yssjyj/css/hiero.css" >
   <link rel="stylesheet" href="/yssjyj/css/glyphs.css" >
   
-    <link rel="stylesheet" href="/yssjyj/css/vdonate.css" >
-  
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/yssjyj/css/my.css">
@@ -65,7 +63,9 @@ var themeMenus = {};
 
   themeMenus["/yssjyj/"] = "首页"; 
 
-  themeMenus["/yssjyj/archives"] = "刊物介绍"; 
+  themeMenus["/yssjyj/archives"] = "往期刊物"; 
+
+  themeMenus["/yssjyj/kwjs"] = "刊物介绍"; 
 
   themeMenus["/yssjyj/categories"] = "征稿启事"; 
 
@@ -100,7 +100,9 @@ var themeMenus = {};
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/yssjyj/">首页</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/yssjyj/archives">刊物介绍</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/yssjyj/archives">往期刊物</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/yssjyj/kwjs">刊物介绍</a> </li>
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/yssjyj/categories">征稿启事</a> </li>
                     
@@ -117,33 +119,6 @@ var themeMenus = {};
   </div>
 </header>
 
-
-  <div id="originBgDiv" style="background: #fff; width: 100%;">
-
-      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
-        <img id="originBg" width="100%" alt="" src="">
-      </div>
-
-  </div>
-
-  <script>
-  function setAboutIMG(){
-      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
-      var random = Math.floor((Math.random() * imgUrls.length ));
-      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-        document.getElementById("originBg").src=imgUrls[random];
-      } else {
-        document.getElementById("originBg").src='/yssjyj/' + imgUrls[random];
-      }
-  }
-  bgDiv=document.getElementById("originBgDiv");
-  if(location.pathname.match('about')){
-    setAboutIMG();
-    bgDiv.style.display='block';
-  }else{
-    bgDiv.style.display='none';
-  }
-  </script>
 
 
 
@@ -246,60 +221,72 @@ var themeMenus = {};
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">联系我们</h3>
+    <div class="widget-wrap">
+    <h3 class="widget-title">简介</h3>
+
+
+
+
+
+
+
+
+
+
+<p></p>
+
+<p><b>刊名：</b>设计艺术研究</p>
+<p><b>类型：</b>双月刊，2011年创刊</p>
+<p><b>主管单位：</b>中华人民共和国教育部</p>
+<p><b>主办单位：</b>武汉理工大学</p>
+<p><b>主    编：</b>潘 长 学</p>
+<p><b>副主编：</b>杨先艺 方兴</p>
+<p><b>地    址：</b>武汉市洪山区珞狮路122号</p>
+<p><b>邮    编：</b>430070</p>
+<p><b>国际标准刊号：</b>ISSN 20950705</p>
+<p><b>国内统一刊号：</b>CN 42-1807/J</p>
+<p><b>邮发代号: </b>  国外</p>
+
+
+
+
+    
+  </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">微信公众号</h3>
     <div class="widget widget_athemes_social_icons">
 
-    	<ul class="clearfix widget-social-icons">   
-    	
-          
-     			  <li><a href="https://github.com/iTimeTraveler" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="http://www.yoursite.com" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Flickr"><i class="fa fa-flickr" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-            <li><a href="mailto:?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
-          
-   		
-   		</ul>
+    	<img src="https://s1.ax1x.com/2017/12/21/jnfUI.jpg" alt="jnfUI.jpg" border="0" />
+    </div>
+  </div>
 
 
-   		<!--
-   		<ul class="clearfix widget-social-icons">   		
-   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
-		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
-			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
-			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
-			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
-			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
-		</ul> -->
-
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">下载专区</h3>
+    <div class="widget">
+    <table>
+<tbody>
+<tr>
+	<td><span ><a href="http://zheli.org/data/20171221222429.doc">初稿格式说明</a>      </span></td>
+</tr>
+<tr>
+	<td><span ><a href="http://zheli.org/data/20171221222451.doc">终稿格式说明</a>      </span></td>
+</tr>
+<tr>
+	<td><span ><a href="http://zheli.org/data/20171221222348.pdf">作者投稿模板</a>      </span></td>
+</tr>
+<tr>
+	<td><span ><a href="http://zheli.org/data/20171221221041.pdf">终稿上传模板</a>      </span></td>
+</tr>
+</tbody>
+</table>
     </div>
   </div>
 
@@ -401,7 +388,9 @@ var themeMenus = {};
   
     <a href="/yssjyj/" class="mobile-nav-link">Home</a>
   
-    <a href="/yssjyj/archives" class="mobile-nav-link">刊物介绍</a>
+    <a href="/yssjyj/archives" class="mobile-nav-link">往期刊物</a>
+  
+    <a href="/yssjyj/kwjs" class="mobile-nav-link">刊物介绍</a>
   
     <a href="/yssjyj/categories" class="mobile-nav-link">征稿启事</a>
   
