@@ -55,7 +55,13 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/yssjyj/css/my.css">
-
+<!-- 新增图片滚动 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="JS代码,焦点图,JS广告代码,JS特效代码" />
+    <meta name="description" content="此代码内容为简单的banner图片切换焦点图代码，属于站长常用代码，更多焦点图代码请访问懒人图库JS代码频道。" />
+    <title>简单的banner图片切换焦点图代码_懒人图库</title>
+    <link href="/yssjyj/css/slideshow.css" rel="stylesheet" />
+    <script src="/yssjyj/js/slideshow.js" type="text/javascript"></script>
 </head>
 
 <script>
@@ -83,11 +89,7 @@ var themeMenus = {};
   <div class="clearfix container">
       <div class="site-branding">
 
-          <h1 class="site-title">
-            
-              <a href="/yssjyj/" title="设计艺术研究杂志社" rel="home"> 设计艺术研究杂志社 </a>
-            
-          </h1>
+
 
           
             
@@ -121,15 +123,185 @@ var themeMenus = {};
 
 
 
-
+ 
+      
   <div id="container">
+    
     <div id="wrap">
-            
+          
       <div id="content" class="outer">
         
+        
           <section id="main">
+              
+               
+    <div class="comiis_wrapad" id="slideContainer" >
+        <div id="frameHlicAe" class="frame cl">
+            <div class="temp"></div>
+            <div class="block">
+                <div class="cl">
+                    <ul class="slideshow" id="slidesImgs">
+                        <li><a href="http://www.lanrentuku.com/" target="_blank">
+                            <img src="/yssjyj/images/1.jpg" width="960" height="230" alt="" /></a><span class="title">第1张图的描述信息</span></li>
+                        <li><a href="http://www.lanrentuku.com/" target="_blank">
+                            <img src="/yssjyj/images/2.jpg" width="960" height="230" alt="" /></a><span class="title">第2张图的描述信息</span></li>
+                        <li><a href="http://www.lanrentuku.com/" target="_blank">
+                            <img src="/yssjyj/images/3.jpg" width="960" height="230" alt="" /></a><span class="title">第3张图的描述信息</span></li>
+                        <li><a href="http://www.lanrentuku.com/" target="_blank">
+                            <img src="/yssjyj/images/4.jpg" width="960" height="230" alt="" /></a><span class="title">第4张图的描述信息</span></li>
+                        <li><a href="http://www.lanrentuku.com/" target="_blank">
+                            <img src="/yssjyj/images/5.jpg" width="960" height="230" alt="" /></a><span class="title">第5张图的描述信息</span></li>
+                     
+                    </ul>
+                </div>
+                <div class="slidebar" id="slideBar">
+                    <ul>
+                        <li class="on">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        SlideShow(1000);
+    </script>  
+<h3 class="main-title">新闻列表</h3>
+              <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻列表</title>
+    <style>
+        .new_list_con{
+            width: 600px;
+            height: 300px;
+            border: 1px solid #ddd;
+            margin-bottom: 30px ;
+            margin-left: 20px ;
+            /*  多余的部分，进行裁剪 */
+            overflow: hidden;
+        }
+
+        .new_list_con h3{           
+            width: 560px;
+            height: 50px;   
+            /* 设置下划线 */
+            border-bottom: 1px solid #ddd;
+            /*  居中，对齐 */
+            margin: 0 auto;
+
+        }
+
+        .new_list_con h3 span{
+            /*  转换为内联块元素 */
+            /*display: inline-block;*/
+            float: left;
+            height: 50px;
+            border-bottom: 2px solid red;
+            font: 18px/50px 'Microsoft Yahei';
+            color: #000;
+            /* 清除span的padding的上下属性 */
+            padding:0 15px;
+            position: relative;
+        }
+
+
+        .new_list_con h3 a{
+            float: right;
+            font: 14px/14px 'Microsoft Yahei';
+            color: #666;
+            text-decoration: none;
+            margin-top: 25px;
+        }
+
+        .new_list_con h3 a:hover{
+            color: red;
+        }
+
+        .new_list_con ul{
+            /* 清除链接前面的“小圆点” */
+            list-style: none;
+            /* 清除ul的padding属性 */
+            padding: 0;
+            width: 560px;
+            height: 238px;
+            /*  设置左右间距 */
+            margin: 7px auto 0;
+        }
+
+        .new_list_con ul li{
+            /*float: left;*/
+            /*  设置每一行的行高，行宽由内容撑开 */
+            height: 38px;
+            /*  设置每一行的下划线 */
+            border-bottom: 1px solid #ddd;
+        }
+
+        .new_list_con ul a{
+            /*  向左浮动 */
+            float: left;
+            /*  设置字体大小，行宽，字号 */
+            font: 14px/38px 'Microsoft Yahei';
+            /*  清除下划线 */
+            text-decoration: none;
+            /*  设置字体颜色 */
+            color: #000;
+            text-indent: 30px;
+            background: url(2.jpg) 3px center no-repeat;
+        }
+
+        .new_list_con ul span{
+            /*  日期，向右浮动 */
+            float: right;
+            /* 设置行宽 */
+            height: 38px;
+            /* 居中对齐 */
+            line-height: 38px;
+            color: #000;
+        }
+
+/*      .new_list_con ul li:before{
+             在文字前面加“小圆点” 
+            content: '· '
+        }*/
+
+        .new_list_con ul a:hover{
+            /* 触摸变色 */
+            color: red;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="new_list_con">
+        <h3><a href="#">更多&gt;&gt;</a></h3>
+        <ul>
+            <li><a href="">原因并不只有天气</a><span>2017-12-15</span></li>
+            <li><a href="">原因并不只有天气</a><span>2017-12-15</span></li>
+            <li><a href="">原因并不只有天气</a><span>2017-12-15</span></li>
+            <li><a href="">原因并不只有天气</a><span>2017-12-15</span></li>
+            <li><a href="">原因并不只有天气</a><span>2017-12-15</span></li>
+            <li><a href="">原因并不只有天气</a><span>2017-12-15</span></li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+
+
+ 
+              <h3 class="main-title">期刊列表</h3>
+<div ID="zhuye">
+
   
-    <article id="post-计艺术研究第一期"  class="article article-type-post" itemscope itemprop="blogPost" >
+    <article id="post-设计艺术研究2017年第一期"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -137,7 +309,7 @@ var themeMenus = {};
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/yssjyj/2017/12/21/计艺术研究第一期/">设计艺术研究2017年第一期</a>
+      <a class="article-title" href="/yssjyj/2017/12/21/设计艺术研究2017年第一期/">设计艺术研究2017年第一期</a>
     </h1>
   
 
@@ -145,110 +317,412 @@ var themeMenus = {};
     
     <div class="article-meta">
       
-	Posted on <a href="/yssjyj/2017/12/21/计艺术研究第一期/" class="article-date">
+	Posted on <a href="/yssjyj/2017/12/21/设计艺术研究2017年第一期/" class="article-date">
 	  <time datetime="2017-12-20T16:56:00.000Z" itemprop="datePublished">十二月 21, 2017</time>
 	</a>
 
       
     </div>
-    <div class="article-entry" itemprop="articleBody">
+     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://c61.cnki.net/CJFD/big/JCGS/JCGS201701.jpg" alt="设计艺术研究2017年第一期封面"></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">稿件名称</th>
-<th style="text-align:right">作者               </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701001.htm" target="_blank" rel="external">西方后现代主义观照下的当代视觉文化艺术研究——访加拿大康科迪亚大学段</a>      </span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">陈芸 俞一青</span> </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701002.htm" target="_blank" rel="external">从美术教育到现代设计与室内设计——王建柱先生的学术贡献管窥</a>  </span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">李洋</span>          </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701003.htm" target="_blank" rel="external">医疗物联网下病患群体可穿戴辅具的设计研究</a></span><div><span style="line-height: 1.45;"></span></div></td>
-<td style="text-align:right"><span style="line-height: 1.45;">黄群 庄原</span>         </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701004.htm" target="_blank" rel="external">新疆和中亚陶器的传承与文化交流</a></span><div><span style="line-height: 1.45;"></span></div></td>
-<td style="text-align:right"><span style="line-height: 1.45;"></span>热孜婉古丽·吾其孔 伊明江·阿布都热依木     </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701005.htm" target="_blank" rel="external">山西端午民俗工艺独特的“五色”审美观  </a>                                                        </span><div><span style="line-height: 1.45;"></span></div></td>
-<td style="text-align:right"><span style="line-height: 1.45;">任志芳</span>    </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701006.htm" target="_blank" rel="external">环境艺术设计的符号学解读</a>  </span><div></div></td>
-<td style="text-align:right"><span style="line-height: 1.45;"><span style="line-height: 1.45;"></span>林杨程</span>     </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701007.htm" target="_blank" rel="external">中国传统画法的新变——论常玉裸体艺术东西方绘画之综合性</a> </span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">王美艳</span></td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701008.htm" target="_blank" rel="external">论现当代中国艺术史之变迁:以中国写意花鸟画为例</a></span></td>
-<td style="text-align:right"><div><span style="line-height: 1.45;">龚余辉</span></div></td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701009.htm" target="_blank" rel="external">关于“动画定义”的外文文献概述与反思</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">马方楠</span>     </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701010.htm" target="_blank" rel="external">公共设施产品设计中的“行为引导”研究</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">苟锐 马泽群</span> </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701011.htm" target="_blank" rel="external">基于AT-ONE法则的居家养老服务平台建构</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">于东玖 戴雪玲</span></td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701012.htm" target="_blank" rel="external">烙画艺术应用于江南地区家居制品之研究</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">招赫 李鹏</span></td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701013.htm" target="_blank" rel="external">空藏万象,别有洞天——对版式设计中空白意象的探究</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">李鸿明</span></td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701014.htm" target="_blank" rel="external">20世纪50-80年代武汉市橱窗展示形式与设计研究</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">陆江艳 张雪娇</span></td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701015.htm" target="_blank" rel="external">传统公园改造与更新——以上海延中绿地公园为例</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">方智果 陈晓杰 苏羽婕 熊承霞</span>  </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701016.htm" target="_blank" rel="external">基于绿色基础设施的城市景观再生设计研究</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">宋澎涛 廉毅 贾勇</span> </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701017.htm" target="_blank" rel="external">清代笔筒造型装饰的艺术特征</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">钱珑 赵俊学</span> </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701018.htm" target="_blank" rel="external">论“艺术概论”课程的双语教学方法</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">李世葵</span> </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701019.htm" target="_blank" rel="external">他山之“实”——美国弗吉尼亚理工暨州立大学建筑与设计学院专业教学特色</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">周灵云</span> </td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701020.htm" target="_blank" rel="external">基于后喻文化的数字娱乐产业课程教学探究</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">李婷</span></td>
-</tr>
-<tr>
-<td style="text-align:left"><span style="line-height: 1.45;"><a href="http://mall.cnki.net/magazine/Article/JCGS201701021.htm" target="_blank" rel="external">翻转课堂教学效果研究</a></span></td>
-<td style="text-align:right"><span style="line-height: 1.45;">李金城</span></td>
-</tr>
-</tbody>
-</table>
+        <p><img src="http://c61.cnki.net/CJFD/big/JCGS/JCGS201701.jpg" alt=""><br></p>
+        <!-- 
 
+
+
+稿件名称
+作者               
+
+
+
+
+西方后现代主义观照下的当代视觉文化艺术研究——访加拿大康科迪亚大学段      
+陈芸 俞一青 
+
+
+从美术教育到现代设计与室内设计——王建柱先生的学术贡献管窥  
+李洋          
+
+
+医疗物联网下病患群体可穿戴辅具的设计研究
+黄群 庄原         
+
+
+新疆和中亚陶器的传承与文化交流
+热孜婉古丽·吾其孔 伊明江·......  -->
+        <p class="article-more-link">
+          <a href="/yssjyj/2017/12/21/设计艺术研究2017年第一期/#more">查看本期目录</a>
+        </p>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/yssjyj/tags/期刊/">期刊</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+            <!-- 目录内容 -->
+             
+        <!-- 目录内容结束 -->
+  
+    <article id="post-设计艺术研究2017年第二期"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/yssjyj/2017/12/21/设计艺术研究2017年第二期/">设计艺术研究2017年第二期</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/yssjyj/2017/12/21/设计艺术研究2017年第二期/" class="article-date">
+	  <time datetime="2017-12-20T16:55:00.000Z" itemprop="datePublished">十二月 21, 2017</time>
+	</a>
+
+      
+    </div>
+     <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://c61.cnki.net/CJFD/big/JCGS/JCGS201701.jpg" alt=""><br></p>
+        <!-- 
+
+
+
+稿件名称
+作者               
+
+
+
+
+西方后现代主义观照下的当代视觉文化艺术研究——访加拿大康科迪亚大学段      
+陈芸 俞一青 
+
+
+从美术教育到现代设计与室内设计——王建柱先生的学术贡献管窥  
+李洋          
+
+
+医疗物联网下病患群体可穿戴辅具的设计研究
+黄群 庄原         
+
+
+新疆和中亚陶器的传承与文化交流
+热孜婉古丽·吾其孔 伊明江·......  -->
+        <p class="article-more-link">
+          <a href="/yssjyj/2017/12/21/设计艺术研究2017年第二期/#more">查看本期目录</a>
+        </p>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/yssjyj/tags/期刊/">期刊</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+            <!-- 目录内容 -->
+             
+        <!-- 目录内容结束 -->
+  
+    <article id="post-设计艺术研究2017年第三期 "  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/yssjyj/2017/12/21/设计艺术研究2017年第三期 /">设计艺术研究2017年第三期</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/yssjyj/2017/12/21/设计艺术研究2017年第三期 /" class="article-date">
+	  <time datetime="2017-12-20T16:54:00.000Z" itemprop="datePublished">十二月 21, 2017</time>
+	</a>
+
+      
+    </div>
+     <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://c61.cnki.net/CJFD/big/JCGS/JCGS201701.jpg" alt=""><br></p>
+        <!-- 
+
+
+
+稿件名称
+作者               
+
+
+
+
+西方后现代主义观照下的当代视觉文化艺术研究——访加拿大康科迪亚大学段      
+陈芸 俞一青 
+
+
+从美术教育到现代设计与室内设计——王建柱先生的学术贡献管窥  
+李洋          
+
+
+医疗物联网下病患群体可穿戴辅具的设计研究
+黄群 庄原         
+
+
+新疆和中亚陶器的传承与文化交流
+热孜婉古丽·吾其孔 伊明江·......  -->
+        <p class="article-more-link">
+          <a href="/yssjyj/2017/12/21/设计艺术研究2017年第三期 /#more">查看本期目录</a>
+        </p>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/yssjyj/tags/期刊/">期刊</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+            <!-- 目录内容 -->
+             
+        <!-- 目录内容结束 -->
+  
+    <article id="post-设计艺术研究2017年第四期"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/yssjyj/2017/12/21/设计艺术研究2017年第四期/">设计艺术研究2017年第四期</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/yssjyj/2017/12/21/设计艺术研究2017年第四期/" class="article-date">
+	  <time datetime="2017-12-20T16:53:00.000Z" itemprop="datePublished">十二月 21, 2017</time>
+	</a>
+
+      
+    </div>
+     <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://c61.cnki.net/CJFD/big/JCGS/JCGS201701.jpg" alt=""><br></p>
+        <!-- 
+
+
+
+稿件名称
+作者               
+
+
+
+
+西方后现代主义观照下的当代视觉文化艺术研究——访加拿大康科迪亚大学段      
+陈芸 俞一青 
+
+
+从美术教育到现代设计与室内设计——王建柱先生的学术贡献管窥  
+李洋          
+
+
+医疗物联网下病患群体可穿戴辅具的设计研究
+黄群 庄原         
+
+
+新疆和中亚陶器的传承与文化交流
+热孜婉古丽·吾其孔 伊明江·......  -->
+        <p class="article-more-link">
+          <a href="/yssjyj/2017/12/21/设计艺术研究2017年第四期/#more">查看本期目录</a>
+        </p>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/yssjyj/tags/期刊/">期刊</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+            <!-- 目录内容 -->
+             
+        <!-- 目录内容结束 -->
+  
+    <article id="post-设计艺术研究2017年第五期"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/yssjyj/2017/12/21/设计艺术研究2017年第五期/">设计艺术研究2017年第五期</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/yssjyj/2017/12/21/设计艺术研究2017年第五期/" class="article-date">
+	  <time datetime="2017-12-20T16:52:00.000Z" itemprop="datePublished">十二月 21, 2017</time>
+	</a>
+
+      
+    </div>
+     <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://c61.cnki.net/CJFD/big/JCGS/JCGS201701.jpg" alt=""><br></p>
+        <!-- 
+
+
+
+稿件名称
+作者               
+
+
+
+
+西方后现代主义观照下的当代视觉文化艺术研究——访加拿大康科迪亚大学段      
+陈芸 俞一青 
+
+
+从美术教育到现代设计与室内设计——王建柱先生的学术贡献管窥  
+李洋          
+
+
+医疗物联网下病患群体可穿戴辅具的设计研究
+黄群 庄原         
+
+
+新疆和中亚陶器的传承与文化交流
+热孜婉古丽·吾其孔 伊明江·......  -->
+        <p class="article-more-link">
+          <a href="/yssjyj/2017/12/21/设计艺术研究2017年第五期/#more">查看本期目录</a>
+        </p>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/yssjyj/tags/期刊/">期刊</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+            <!-- 目录内容 -->
+             
+        <!-- 目录内容结束 -->
+  
+    <article id="post-设计艺术研究2017年第六期"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/yssjyj/2017/12/21/设计艺术研究2017年第六期/">设计艺术研究2017年第六期</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/yssjyj/2017/12/21/设计艺术研究2017年第六期/" class="article-date">
+	  <time datetime="2017-12-20T16:51:00.000Z" itemprop="datePublished">十二月 21, 2017</time>
+	</a>
+
+      
+    </div>
+     <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://c61.cnki.net/CJFD/big/JCGS/JCGS201701.jpg" alt=""><br></p>
+        <!-- 
+
+
+
+稿件名称
+作者               
+
+
+
+
+西方后现代主义观照下的当代视觉文化艺术研究——访加拿大康科迪亚大学段      
+陈芸 俞一青 
+
+
+从美术教育到现代设计与室内设计——王建柱先生的学术贡献管窥  
+李洋          
+
+
+医疗物联网下病患群体可穿戴辅具的设计研究
+黄群 庄原         
+
+
+新疆和中亚陶器的传承与文化交流
+热孜婉古丽·吾其孔 伊明江·......  -->
+        <p class="article-more-link">
+          <a href="/yssjyj/2017/12/21/设计艺术研究2017年第六期/#more">查看本期目录</a>
+        </p>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -273,7 +747,9 @@ var themeMenus = {};
   
 
 
-</section>
+
+    </div> 
+          </section>
           <aside id="sidebar">
   
     <div class="widget-wrap" style="margin: 20px 0;">
@@ -332,7 +808,7 @@ var themeMenus = {};
 
 
 
-
+<div class="widget">
 <p></p>
 
 <p><b>刊名：</b>设计艺术研究</p>
@@ -350,7 +826,7 @@ var themeMenus = {};
 
 
 
-    
+    </div> 
   </div>
   </div>
 
@@ -406,7 +882,67 @@ var themeMenus = {};
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/yssjyj/2017/12/21/计艺术研究第一期/">设计艺术研究2017年第一期</a></h6>
+              <h6 style="margin: 0;"><a href="/yssjyj/2017/12/21/设计艺术研究2017年第一期/">设计艺术研究2017年第一期</a></h6>
+              <span>十二月 21, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/yssjyj/2017/12/21/设计艺术研究2017年第二期/">设计艺术研究2017年第二期</a></h6>
+              <span>十二月 21, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/yssjyj/2017/12/21/设计艺术研究2017年第三期 /">设计艺术研究2017年第三期</a></h6>
+              <span>十二月 21, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/yssjyj/2017/12/21/设计艺术研究2017年第四期/">设计艺术研究2017年第四期</a></h6>
+              <span>十二月 21, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/yssjyj/2017/12/21/设计艺术研究2017年第五期/">设计艺术研究2017年第五期</a></h6>
+              <span>十二月 21, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/yssjyj/2017/12/21/设计艺术研究2017年第六期/">设计艺术研究2017年第六期</a></h6>
               <span>十二月 21, 2017</span>
             </div>
 
@@ -448,7 +984,7 @@ var themeMenus = {};
 
   <div class="clearfix container">
       <div class="site-info">
-	      &copy; 2017 设计艺术研究杂志社 All Rights Reserved.
+	      &copy; 2018 设计艺术研究杂志社 All Rights Reserved.
           
             <span id="busuanzi_container_site_uv">
               本站访客数<span id="busuanzi_value_site_uv"></span>人次  
@@ -554,6 +1090,6 @@ var themeMenus = {};
   </div>
 
   <a id="rocket" href="#top" class=""></a>
-  <script type="text/javascript" src="/js/totop.js" async=""></script>
+  <script type="text/javascript" src="/yssjyj/js/totop.js" async=""></script>
 </body>
 </html>
