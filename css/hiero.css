@@ -1158,7 +1158,8 @@ body.search .page .entry-footer {
 	color: #ff2828;
 	}
 .site-info {
-	float: left;
+	
+	text-align: center;
 	}
 .site-credit {
 	float: right;
