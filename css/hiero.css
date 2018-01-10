@@ -148,8 +148,8 @@ a.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #ff2828;
-	border-color: #ff2828;
+	background: #94243a;
+	border-color: #94243a;
 	}
 
 /* Tables */
@@ -405,7 +405,7 @@ object {
 	}
 #main-navigation li:hover li a:hover,
 #main-navigation li.sfHover li a:hover {
-	background: #eb2121;
+	background: #94243a;
 	}
 
 /* Small Navigation */
@@ -528,7 +528,7 @@ object {
 	text-decoration: none;
 	}
 .entry-title a:hover {
-	color: #ff2828;
+	color: #7f0019;
 	}
 .entry-meta {
 	color: #999;
@@ -561,7 +561,7 @@ object {
 	font-family: "Yanone Kaffeesatz", "方正姚体", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	line-height: 1;
-	background: #ff2828;
+	background: #7f0019;
 	}
 .entry-thumbnail {
 	float: left;
