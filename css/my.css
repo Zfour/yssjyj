@@ -3,3 +3,17 @@ type your custom css here
 在本文件键入您的自定义CSS
 升级主题文件时请注意保护本文件，防止意外覆盖。
 */
+#newsindex h1 {
+    margin: 0.1em 0 .0em;}
+#newsindex	.archives-wrap {
+    margin: 0px 0;
+}
+#newsindex  a {
+      text-indent: 0px;
+	  font: 13px/38px 'Microsoft Yahei';
+       }
+	   
+#newsindex .archive-article-title {
+	float: right;
+	    border-left: 0px solid #16171b;
+    padding-right: 10px;}

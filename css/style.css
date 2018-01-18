@@ -1220,6 +1220,9 @@ a.article-title:hover {
 #page-nav .space {
   color: #eef1f8;
 }
+#zhuye .h1 {
+  margin: 0.1em 0 0em;
+}
 .article-entry pre,
 .article-entry .highlight {
   background: #f8f8f8;
