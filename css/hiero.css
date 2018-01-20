@@ -416,7 +416,7 @@ object {
 .nav-open,
 .nav-close {
 	display: none;
-	color: #eb2121;
+	color: #333;
 	font-size: 1.2em;
 	font-weight: 400;
 	font-family: Microsoft Yahei, "方正姚体", Arial, Helvetica, sans-serif;
@@ -424,7 +424,7 @@ object {
 	text-transform: uppercase;
 	line-height: 50px;
 	letter-spacing: 1px;
-	background: #060608;
+	background:#daab67;
 	}
 @media only screen and (max-width: 60em) {
 	.nav-open {
@@ -1250,8 +1250,7 @@ body.search .page .entry-footer {
 	letter-spacing: 2px;
 	margin-bottom
 	: 30px;
-	margin-right
-	: 530px;
+	
 	display: inline-block;
 	line-height: 40px;
 	border-bottom: 03px solid #8e6221;
