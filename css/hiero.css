@@ -135,23 +135,23 @@ a.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	padding: 5px 15px;
+	padding: 4px 14px ;
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: 400;
 	font-family: "Microsoft YaHei", "方正姚体", Arial, Helvetica, sans-serif;
 	line-height: 30px;
 	text-transform: uppercase;
-	background: #7f0019;
-	border: 1px solid #7f0019;
+	background: #8e6221;
+	border: 1px solid #8e6221;
 	}
 button:hover,
 a.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #94243a;
-	border-color: #94243a;
+	background: #edc68f;
+	border-color: #edc68f;
 	}
 
 /* Tables */
@@ -256,7 +256,7 @@ object {
 ----------------------------------------------- */
 .site-header {
 	padding: 100px 0 0;
-	background: url(head.jpg);
+	background: url(head.png);
 	background-repeat:no-repeat;repeat-x;repeat-y;
 
 	 
@@ -265,7 +265,8 @@ object {
 	 background-position:top center;
 	}
 .site-branding {
-	float: left;
+	float: right;
+	margin-top:29px;
 	}
 .site-title {
 	margin: 0;
@@ -338,7 +339,7 @@ object {
 	padding: 50px 0 0;
 	}
 #main-navigation .sf-menu {
-	background: #7f0019;
+	background: #ffffff;;
 	}
 #main-navigation .sf-menu > ul > li:after {
 	width: 1px;
@@ -362,7 +363,7 @@ object {
 #main-navigation li a {
 	margin: 0 -2px 0 0;
 	padding: 0 20px;
-	color: #fff;
+	color: #000;
 	font-size: 1.2em;
 	font-weight: 400;
 	font-family: Microsoft Yahei, "方正姚体", Arial, Helvetica, sans-serif;
@@ -396,7 +397,7 @@ object {
 #main-navigation li.current-page-ancestor > a,
 #main-navigation li.current_page_ancestor > a {
 	color: #fff;
-	background: #94243a;
+	background: #EDC68F;
 	}
 #main-navigation li:hover li a,
 #main-navigation li.sfHover li a {
@@ -478,7 +479,7 @@ object {
 /* LAYOUT
 ----------------------------------------------- */
 .container {
-	width: 980px;
+	width: 1006px;
 
 	padding: 25px;
 	}
@@ -851,7 +852,7 @@ body.search .page .entry-footer {
 	margin: 0 0 -1px;
 	display: inline-block;
 	line-height: 40px;
-	border-bottom: 3px solid #7f0019;
+	border-bottom: 3px solid #8e6221;
 	}
 .widget-title span {
 	margin: 0 0 -1px;
@@ -1148,10 +1149,10 @@ body.search .page .entry-footer {
 /* FOOTER
 ----------------------------------------------- */
 .site-footer {
-	padding: 18px 0;
-	color: #999;
+	padding: 50px 0;
+	color: #545454;
 	font-size: .9em;
-	background: #16171b;
+	
 	}
 .site-footer a {
 	color: #fff;
@@ -1243,7 +1244,7 @@ body.search .page .entry-footer {
 }
 
 	.main-title {
-	margin: 0;
+	margin-top: 5px;
 	font-size: 1.6em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -1253,7 +1254,7 @@ body.search .page .entry-footer {
 	: 530px;
 	display: inline-block;
 	line-height: 40px;
-	border-bottom: 03px solid #7f0019;
+	border-bottom: 03px solid #8e6221;
 	font-weight: bold;
 	
 	}

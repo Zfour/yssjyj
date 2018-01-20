@@ -984,7 +984,8 @@ a.article-title:hover {
   margin-left: 1em;
 }
 #zhuye .article-entry img {
-  height: 170px;
+  height: 50px;
+  margin-top: 30px;
 }
 #zhuye .article-header h1 {
   margin: 0 0 3px 0;
@@ -993,9 +994,20 @@ a.article-title:hover {
 }
 #zhuye .article {
   color: #555;
-  margin: 0 0 40px 0;
+  margin: 0 0 0 0;
   float: left;
+  width: 648px;
   padding-left: 20.5px;
+  border-bottom: 1px solid #ddd;
+}
+#zhuye .article-entry {
+  color: #333;
+  padding: 0;
+  width: 50px;
+  float: left;
+}
+#zhuye .hentry {
+  margin: 0;
 }
 #comments {
   padding: 20px;
@@ -1668,7 +1680,7 @@ pre .xml .cdata {
 .widget {
   color: #777;
   background: transparent;
-  border-width: 1px 0 0 0;
+  border-width: 0px 0 0 0;
   border-style: solid;
   border-color: #d6d6d6;
 }
