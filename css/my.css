@@ -48,9 +48,21 @@ type your custom css here
 	}
 
 }
-#zhuye {border: 1px solid #ddd;height:750px;}
+#zhuye {border: 1px solid #ddd;height:800px;}
 @media screen and (max-width:470px) {
 	#zhuye {
 		height:990px;
 	}
 	}
+	@media screen and (max-width:480px) {
+	#search-form-wrap {display:none
+		
+	}
+		#sidebar {display:block
+		
+	}
+	#form1 {display:none
+		
+	}
+	}
+	
