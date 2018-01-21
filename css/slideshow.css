@@ -40,4 +40,4 @@ a:hover { text-decoration: underline; color: #8e6221; }
 .comiis_wrapad { overflow: hidden; }
     .comiis_wrapad img { float: left; margin-top: 0px; }
 
-#slidesImgs li { width: 960px; height: 230px; display: none; }
+#slidesImgs li { width: auto; height: 230px; display: none; }
