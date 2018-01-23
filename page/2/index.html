@@ -62,6 +62,8 @@
     <title>简单的banner图片切换焦点图代码_懒人图库</title>
     <link href="/yssjyj/css/slideshow.css" rel="stylesheet" />
     <script src="/yssjyj/js/slideshow.js" type="text/javascript"></script>
+    <link href="/yssjyj/css/slideshow2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/yssjyj/js/slideshow2.js"></script>
 </head>
 
 <script>
@@ -138,42 +140,101 @@ var themeMenus = {};
         
           <section id="main">
               
-               
-    <div class="comiis_wrapad" id="slideContainer" >
-        <div id="frameHlicAe" class="frame cl">
-            <div class="temp"></div>
-            <div class="block">
-                <div class="cl">
-                    <ul class="slideshow" id="slidesImgs">
-                        <li><a href="/yssjyj/2017/12/31/新闻 2017.12.25">
-                            <img src="/yssjyj/images/1.jpg" width="100%" height="230" alt="" /></a><span class="title">《设计艺术研究》第六期延期出刊通知</span></li>
-                        <li><a href="/yssjyj/2017/12/31/新闻 2017.12.31" >
-                            <img src="/yssjyj/images/2.jpg" width="100%" height="230" alt="" /></a><span class="title">《设计艺术研究》编辑部元旦放假通知</span></li>
-                        <li><a href="http://www.lanrentuku.com/" >
-                            <img src="/yssjyj/images/3.jpg" width="100%" height="230" alt="" /></a><span class="title">第3张图的描述信息</span></li>
-                        <li><a href="http://www.lanrentuku.com/" >
-                            <img src="/yssjyj/images/4.jpg" width="100%" height="230" alt="" /></a><span class="title">第4张图的描述信息</span></li>
-                        <li><a href="http://www.lanrentuku.com/" >
-                            <img src="/yssjyj/images/5.jpg" width="100%" height="230" alt="" /></a><span class="title">第5张图的描述信息</span></li>
-                     
-                    </ul>
-                </div>
-                <div class="slidebar" id="slideBar">
-                    <ul>
-                        <li class="on">1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                
-                    </ul>
-                </div>
-            </div>
-        </div>
+               <style type="text/css">
+  body,div,ul,li,a,img{margin: 0;padding: 0;}
+  ul,li{list-style: none;}
+  a{text-decoration: none;}
+ 
+  .wrapper{position: relative;margin-top: 10px;margin-bottom: 30px;width: 100%;height: 230px;}
+  .banner{width:100%;height: 230px;overflow: hidden;}
+  .imgList{width:100%;height:230px;z-index: 10;}
+  .imgList li{display: none;}
+  .imgList .imgOn{display: inline;}
+  .bg{position: absolute;bottom: 0;width: 100%;height: 32px;z-index:20;opacity: 1;filter:alpha(opacity=40);background:rgba(0,0,0,0.3);}
+  .infoList{position: absolute;left: 10px;bottom: 7px;z-index: 30;}
+  .infoList li{display: none;}
+  .infoList .infoOn{display: inline;color: white;
+    font-size: 14px;font-weight: 500;}
+  .indexList{position: absolute;left: 4px;top: 5px;z-index: 30;}
+  .indexList li{ float: left;
+    margin-right: 1px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+      background: rgba(0,0,0,0.3);
+    color:#fff;
+}
+  .indexList .indexOn{background: rgba(255,255,255,0.5);;font-weight: 700;color: yellow;}
+</style>
+
+
+  <div class="wrapper"><!-- 最外层部分 -->
+    <div class="banner"><!-- 轮播部分 -->
+      <ul class="imgList"><!-- 图片部分 -->
+        <li class="imgOn"><a href="#"><img src="/yssjyj/images/1.jpg" width="100%" height="230px" alt="puss in boots1"></a></li>
+      <li><a href="#"><img src="/yssjyj/images/2.jpg" width="100%" height="230px" alt="puss in boots2"></a></li>
+      <li><a href="#"><img src="/yssjyj/images/3.jpg" width="100%" height="230px" alt="puss in boots3"></a></li>
+      <li><a href="#"><img src="/yssjyj/images/4.jpg" width="100%" height="230px" alt="puss in boots4"></a></li>
+      <li><a href="#"><img src="/yssjyj/images/5.jpg" width="100%" height="230px" alt="puss in boots5"></a></li>
+      </ul>
+      <div class="bg"></div> <!-- 图片底部背景层部分-->
+      <ul class="infoList"><!-- 图片左下角文字信息部分 -->
+        <li class="infoOn">第六期延期出刊通知</li>
+        <li>编辑部祝广大读者元旦快乐</li>
+        <li>puss in boots3</li>
+        <li>puss in boots4</li>
+        <li>puss in boots5</li>
+      </ul>
+      <ul class="indexList"><!-- 图片右下角序号部分 -->
+        <li class="indexOn">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
     </div>
-    <script type="text/javascript">
-        SlideShow(2000);
-    </script>  
+  </div>
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript">
+  var curIndex = 0; //当前index
+     //  alert(imgLen);
+     // 定时器自动变换2.5秒每次
+  var autoChange = setInterval(function(){ 
+    if(curIndex < $(".imgList li").length-1){ 
+      curIndex ++; 
+    }else{ 
+      curIndex = 0;
+    }
+    //调用变换处理函数
+    changeTo(curIndex); 
+  },3000);
+ 
+  $(".indexList").find("li").each(function(item){ 
+    $(this).hover(function(){ 
+      clearInterval(autoChange);
+      changeTo(item);
+      curIndex = item;
+    },function(){ 
+      autoChange = setInterval(function(){ 
+        if(curIndex < $(".imgList li").length-1){ 
+          curIndex ++; 
+        }else{ 
+          curIndex = 0;
+        }
+        //调用变换处理函数
+        changeTo(curIndex); 
+      },3000);
+    });
+  });
+  function changeTo(num){ 
+    $(".imgList").find("li").removeClass("imgOn").hide().eq(num).fadeIn().addClass("imgOn");
+    $(".infoList").find("li").removeClass("infoOn").eq(num).addClass("infoOn");
+    $(".indexList").find("li").removeClass("indexOn").eq(num).addClass("indexOn");
+  }
+  </script>  
 <h3 class="main-title">新闻列表</h3>
               <html lang="en">
 <head>
@@ -216,7 +277,7 @@ var themeMenus = {};
 
 
         .new_list_con h3 a{
-            margin-right:37px;
+            margin-right:25px;
             float: right;
             font: 14px/14px 'Microsoft Yahei';
             color: #666;
@@ -258,7 +319,7 @@ var themeMenus = {};
             /*  设置字体颜色 */
             color: #000;
             text-indent: 30px;
-            background: url(2.jpg) 3px center no-repeat;
+          
         }
 
         .new_list_con ul span{
@@ -432,7 +493,7 @@ var themeMenus = {};
     font: 14px/14px 'Microsoft Yahei';
     color: #666;
     text-decoration: none;
-    margin-top: 25px;margin-right:37px"
+    margin-top: 25px;margin-right:25px"
      onMouseOver="this.style.color='#F00';this.style.textDecoration='none'"
  onMouseOut="this.style.color='#000';this.style.textDecoration='none'">更多&gt;&gt;</a></h3>
 
@@ -493,7 +554,7 @@ var themeMenus = {};
     
      </div >
        <div style="float:right;margin-top: 40px;
-    margin-right: 37px;">
+    margin-right: 25px;">
            <div class="article-meta">
       
 	Posted on <a href="/yssjyj/2017/04/01/设计艺术研究2017年第二期/" class="article-date">
@@ -564,7 +625,7 @@ var themeMenus = {};
     
      </div >
        <div style="float:right;margin-top: 40px;
-    margin-right: 37px;">
+    margin-right: 25px;">
            <div class="article-meta">
       
 	Posted on <a href="/yssjyj/2017/02/01/设计艺术研究2017年第一期/" class="article-date">
@@ -640,35 +701,12 @@ var themeMenus = {};
 </div>
   
     
-  <div id="userstage" class="widget-wrap" style="margin-top: 31.5px ;height:153px">
+  <div id="userstage" class="widget-wrap" >
   
     <head runat="server">  
     <title></title>  
-    <style>  
-  
-#login_click{ margin-top:15px; height: 10px; }  
-#login_click a   
-{  
-      
-  
-    text-decoration:none;  
-    background:#8E6221;  
-    color:#f2f2f2;  
-    
-    
-    padding: 10px 113px 10px 113px;  
-    font-size:15px;  
-    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;  
-    font-weight:bold;  
-   
-    -webkit-transition:all linear 0.30s;  
-    -moz-transition:all linear 0.30s;  
-    transition:all linear 0.30s;  
-      
-    }  
-   #login_click a:hover { background:#EDC68F; }  
-  
-</style>  
+ 
+        
 </head>  
  
     <form id="form1" runat="server">  

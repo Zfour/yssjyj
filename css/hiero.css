@@ -135,7 +135,7 @@ a.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	padding: 4px 14px ;
+	padding: 4px 4.64% ;
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: 400;
@@ -426,7 +426,7 @@ object {
 	letter-spacing: 1px;
 	background:#daab67;
 	}
-@media only screen and (max-width: 60em) {
+@media screen and (max-width:720px) {
 	.nav-open {
 		display: block;
 		cursor: pointer;
@@ -452,7 +452,7 @@ object {
 		text-align: center;
 		overflow: hidden;
 		background: #333;
-		z-index: 1;
+		z-index: 99;
 		}
 	#main-navigation:target > .sf-menu > ul {
 		max-height: 400px;
