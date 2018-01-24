@@ -116,7 +116,18 @@ type your custom css here
 	#login_click a {font-size: 13px;}
 	.search-form-submit {font-size: 1em;}
 	#userstage {margin-top: 42.5px ;height:142px;}}	
-	@media screen and (max-width:720px) {
-}}	
-@media screen and (max-width:768px) { .site-header {margin-right: 2.604167%;
+	@media screen and (max-width:320px) { .container {
+  
+    height: 122.34px;  
+}
+.site-branding {
+    
+    margin-top: 22px;
+   
+}
+}	
+
+@media screen and (max-width:768px) { .site-header {
+	margin-left: 20px;
+	margin-right: 20px;
 }}	
