@@ -426,7 +426,8 @@ object {
 	letter-spacing: 1px;
 	background:#daab67;
 	}
-@media screen and (max-width:720px) {
+@media screen and (max-width:980px) {
+	
 	.nav-open {
 		display: block;
 		cursor: pointer;
