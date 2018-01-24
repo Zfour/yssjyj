@@ -125,6 +125,9 @@ type your custom css here
     margin-top: 22px;
    
 }
+#main-navigation li a {
+   
+    padding: 0 0px;}
 }	
 
 @media screen and (max-width:768px) { .site-header {
