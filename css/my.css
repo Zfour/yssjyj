@@ -3,6 +3,10 @@ type your custom css here
 在本文件键入您的自定义CSS
 升级主题文件时请注意保护本文件，防止意外覆盖。
 */
+#zazhibiaoti {float:left;margin-top: 45px;
+    margin-left: 20px;}
+#zazhishijian {float:right;margin-top: 40px;
+    margin-right: 25px;}
 #userstage {margin-top: 31.5px ;height:153px;}
   #login_click{ margin-top:15px; height: 10px; }  
 
@@ -88,7 +92,7 @@ type your custom css here
 #zhuye {border: 1px solid #ddd;height:800px;}
 @media screen and (max-width:470px) {
 	#zhuye {
-		height:990px;
+		height: 790px;
 	}
 	}
 	@media screen and (max-width:480px) {
@@ -116,7 +120,17 @@ type your custom css here
 	#login_click a {font-size: 13px;}
 	.search-form-submit {font-size: 1em;}
 	#userstage {margin-top: 42.5px ;height:142px;}}	
-	@media screen and (max-width:320px) { .container {
+	.wrapper{position: relative;margin-top: 10px;margin-bottom: 30px;width: 100%;height: 230px;}
+  .banner{width:100%;height: 230px;overflow: hidden;}
+  .imgList{width:100%;height:230px;z-index: 10;}
+  .imgList .imgOn{display: inline;}
+	@media screen and (max-width:320px) {
+#zhuye .article {
+    
+    padding-left: 9.5px;
+   
+}
+		 .container {
   
     height: 122.34px;  
 }
@@ -134,3 +148,7 @@ type your custom css here
 	margin-left: 20px;
 	margin-right: 20px;
 }}	
+@media screen and (max-width:494px) {#zazhibiaoti {float:left;margin-top: 32px;
+    margin-left: 10px;}
+#zazhishijian {float:left;margin-top: 0px;
+    margin-right: 0px;margin-left: 10px;}}	
