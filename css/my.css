@@ -7,7 +7,7 @@ type your custom css here
     margin-left: 20px;}
 #zazhishijian {float:right;margin-top: 40px;
     margin-right: 25px;}
-#userstage {margin-top: 31.5px ;height:153px;}
+#userstage {margin-top: 36.5px ;height:153px;}
   #login_click{ margin-top:15px; height: 10px; }  
 
 #login_click a:hover { background:#EDC68F; }  
@@ -44,7 +44,7 @@ type your custom css here
 	  float:right;
 	  
        }
-	   .xinwenshijian {margin-right:25px;}
+	   .xinwenshijian {margin-right:15px;}
 #newsindex .archive-article-title {
 	float: left;
 	    border-left: 0px solid #16171b;
