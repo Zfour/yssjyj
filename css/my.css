@@ -89,7 +89,7 @@ type your custom css here
 	}
 
 }
-#zhuye {border: 1px solid #ddd;height:800px;}
+#zhuye {border: 1px solid #eef1f8;height:765px;}
 @media screen and (max-width:470px) {
 	#zhuye {
 		height: 790px;
