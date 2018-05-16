@@ -46,9 +46,14 @@ type your custom css here
        }
 	   .xinwenshijian {margin-right:15px;}
 #newsindex .archive-article-title {
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+	width:50%;
 	float: left;
-	    border-left: 0px solid #16171b;
-    padding-left: 0px;}
+	border-left: 0px solid #16171b;
+	padding-left: 0px;
+	}
 #newsindexs .new_list_con {
     width: auto;
     
